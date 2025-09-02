@@ -47,7 +47,6 @@ public class Program {
         int id = entrada.nextInt();
         sellerDao.deleteById(id);
 
-
         entrada.close();
 
     }
