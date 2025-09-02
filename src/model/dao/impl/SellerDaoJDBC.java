@@ -189,7 +189,7 @@ public class SellerDaoJDBC implements SellerDao {
                 // Verificar se dentro da lista existe um Departamento
                 Department dep = map.get(rs.getInt("DepartmentId"));
 
-                // Se não instanciar um Objeto Department
+                // Se não, instanciar um Objeto Department
                 if (dep == null) {
                     dep = instantiateDepartment(rs);
                     map.put(rs.getInt("DepartmentId"), dep);
